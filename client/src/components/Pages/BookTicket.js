@@ -20,7 +20,7 @@ const BookTicket = () => {
   const [data, setData] = useState([]);
 
   const loadData = async () => {
-    const response = await Axios.get("http://localhost:5000/airport/api/get");
+    const response = await Axios.get("http://localhost:5001/airport/api/get");
     setData(response.data);
   };
 
@@ -31,7 +31,7 @@ const BookTicket = () => {
   // handle submit
   const onSubmit = (data) => {
     console.log(data.departure);
-    Axios.post("http://localhost:5000/BookTicket", {
+    Axios.post("http://localhost:5001/BookTicket", {
       departure: data.departure,
       arrival: data.arrival,
       departureDate: data.departureDate,
@@ -237,7 +237,7 @@ const BookTicket = () => {
                         <option>$ 2000</option>
                         <option>$ 3000</option>
                         <option>$ 4000</option>
-                        <option>$ 5000</option>
+                        <option>$ 5001</option>
                       </select>
                     </div>
                     {/* <div>Error</div> */}

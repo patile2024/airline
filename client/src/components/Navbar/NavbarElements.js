@@ -31,8 +31,8 @@ export const Bars = styled(FaBars)`
 
 export const NavMenu = styled.div`
   display: flex;
-  margin-right: 500px;
-  margin-left:400px;
+  // margin-right: 500px;
+  // margin-left:400px;
   
 `;
 

@@ -9,7 +9,7 @@ const Booking = () => {
   const [data,setData]=useState([]);
   
   const loadData =async()=>{
-    const response= await Axios.get('http://localhost:5000/booking/api/get');
+    const response= await Axios.get('http://localhost:5001/booking/api/get');
     setData(response.data);
   }
 

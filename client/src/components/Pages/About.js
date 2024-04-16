@@ -10,13 +10,13 @@ const About = () => {
   const [data1, setData1] = useState({});
   const [data2, setData2] = useState({});
   useEffect(() => {
-    Axios.get('http://localhost:5000/getreview').then((resp) =>
+    Axios.get('http://localhost:5001/getreview').then((resp) =>
       setData({ ...resp.data[0] }),
     );
-    Axios.get('http://localhost:5000/getreview').then((resp) =>
+    Axios.get('http://localhost:5001/getreview').then((resp) =>
       setData1({ ...resp.data[1] }),
     );
-    Axios.get('http://localhost:5000/getreview').then((resp) =>
+    Axios.get('http://localhost:5001/getreview').then((resp) =>
       setData2({ ...resp.data[2] }),
     );
   }, []);

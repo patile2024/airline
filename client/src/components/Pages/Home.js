@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Slider />
-      <div className="row" style={{ marginTop: "35px" }}>
+      <div className="row" style={{ marginTop: "35px", boxSizing: 'border-box' }}>
         <div className="col-lg-4 align-items-center d-flex justify-content-center">
           <div className="white border-0" style={{ width: "40rem" }}>
             <div className="text-center">
@@ -14,8 +14,8 @@ const Home = () => {
               <img
                 src={require("../../images/Destinations_Dekstop.png")}
                 style={{ borderRadius: "20px" }}
-                width="650"
-                height="550"
+                width="550"
+                height="450"
               />
               <div className="card-body white border-0">
                 <h5 className="card-title">
@@ -35,8 +35,8 @@ const Home = () => {
               <img
                 src={require("../../images/Fasttrack_Desktop.jpg")}
                 style={{ borderRadius: "20px" }}
-                width="650"
-                height="550"
+                width="550"
+                height="450"
               />
               <div className="card-body white border-0">
                 <h5 className="card-title">
@@ -56,8 +56,8 @@ const Home = () => {
               <img
                 src={require("../../images/Alfursan_Destop.jpg")}
                 style={{ borderRadius: "20px" }}
-                width="650"
-                height="550"
+                width="550"
+                height="450"
               />
               <div className="card-body white border-0">
                 <h5 className="card-title">
@@ -75,7 +75,7 @@ const Home = () => {
       <br></br>
       <br></br>
 
-      <div className="row">
+      <div className="row flex items-center justify-items-center justify-center">
         <div className="col-lg-6 align-items-center d-flex justify-content-center">
           <div
             className=" text-center"
@@ -91,7 +91,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-lg-6 align-items-center d-flex justify-content-center">
+        <div className="col-lg-10 align-items-center d-flex justify-content-center">
           <div className="row">
             <div className="col-lg-12 align-items-center d-flex justify-content-center">
               <div className="card border-0" style={{ width: "50rem" }}>
@@ -182,7 +182,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <header style={{ paddingLeft: 0,marginLeft:'25%',marginTop:'5%' }}>
+      <header style={{  }}>
         <div
           className="p-5 text-center bg-image"
           style={{

@@ -9,7 +9,7 @@ const CustomerPanel = () => {
   const {id}=useParams();
   useEffect(() => {
     Axios
-      .get(`http://localhost:5000/CustomerPanel/${id}`)
+      .get(`http://localhost:5001/CustomerPanel/${id}`)
       .then((resp) => setUser({ ...resp.data[0] }));
   }, [id]);
   return (

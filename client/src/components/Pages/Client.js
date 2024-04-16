@@ -9,7 +9,7 @@ const Client = () => {
   const [data,setData]=useState([]);
   
   const loadData =async()=>{
-    const response= await Axios.get('http://localhost:5000/api/get');
+    const response= await Axios.get('http://localhost:5001/api/get');
     setData(response.data);
   }
 
@@ -22,7 +22,7 @@ const Client = () => {
     console.log(id)
     if(window.confirm('Do you really want to delete Client with Client ID '+ id +'?'))
     {
-      Axios.delete(`http://localhost:5000/api/remove/${id}`);
+      Axios.delete(`http://localhost:5001/api/remove/${id}`);
       toast.success('Client deleted successfully!');
       setTimeout(()=> loadData(),500);
     }

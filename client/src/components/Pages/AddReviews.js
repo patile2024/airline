@@ -21,7 +21,7 @@ const AddReviews = () => {
 
   const Add = (event) => {
     event.preventDefault();
-    Axios.post(`http://localhost:5000/addreview/${id}`, {
+    Axios.post(`http://localhost:5001/addreview/${id}`, {
       id:id,
       review:review,
     }).then((response) => {
